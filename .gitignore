@@ -1,0 +1,30 @@
+# Ambiente virtual
+.venv/
+env/
+venv/
+
+# Arquivos de banco de dados
+db.sqlite3
+
+# Migrations
+*/migrations/__pycache__/
+*/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*~
+
+# Arquivos temporários
+*.log
+*.pyc
+*.pyo
+*.swp
+
+# Configurações do VS Code
+.vscode/
+
+# Arquivos de cache
+__pycache__/
+*.py[cod]
+
+# DOCX do meu TCC
+TCC.DOCX

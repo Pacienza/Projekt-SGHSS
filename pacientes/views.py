@@ -1,0 +1,13 @@
+from django.shortcuts import render
+
+from rest_framework import viewsets
+from .models import Paciente
+from .serializers import PacienteSerializer
+from rest_framework.permissions import IsAuthenticated
+from usuarios.permissions import IsAdmin, IsPaciente
+
+class PacienteViewSet(viewsets.ModelViewSet):
+    queryset = Paciente.objects.all()
+    serializer_class = PacienteSerializer
+    permission_classes = [IsAdmin | IsPaciente]
+
