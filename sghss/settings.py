@@ -48,12 +48,16 @@ INSTALLED_APPS = [
 
     # Classe base
     'usuarios.apps.UsuariosConfig',
+    'unidade',
     # Atores
     'pacientes',
     'profissionais',
     # Requisitos
     'consultas',
     'prontuarios',
+    'prescricoes',
+    'internacoes',
+    'relatorios',
 ]
 
 

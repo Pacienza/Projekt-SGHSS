@@ -11,11 +11,18 @@ urlpatterns = [
     path('api/', include('usuarios.urls')),
     path('api/', include('pacientes.urls')),
     path('api/', include('profissionais.urls')),
-    path('api/', include('prontuarios.urls')),
 
-    
+
     # ENDPOINTS FUNÇÔES DO SISTEMA
     path('api/', include('consultas.urls')),
+    path('api/', include('prontuarios.urls')),
+    path('api/', include('prescricoes.urls')),
+    path('api/', include('internacoes.urls')),
+    path('api/relatorios/', include('relatorios.urls')),
+    path('api/', include('unidades.urls')),
+
+
+
 
     
     # Swagger
