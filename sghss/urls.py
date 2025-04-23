@@ -19,7 +19,7 @@ urlpatterns = [
     path('api/', include('prescricoes.urls')),
     path('api/', include('internacoes.urls')),
     path('api/relatorios/', include('relatorios.urls')),
-    path('api/', include('unidades.urls')),
+    path('api/', include('unidade.urls')),
 
 
 

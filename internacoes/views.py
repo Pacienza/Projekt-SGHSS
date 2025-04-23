@@ -6,6 +6,7 @@ from .models import Internacao
 from .serializers import InternacaoSerializer
 
 class InternacaoViewSet(viewsets.ModelViewSet):
+    queryset = Internacao.objects.all()
     serializer_class = InternacaoSerializer
     permission_classes = [IsAuthenticated]
 

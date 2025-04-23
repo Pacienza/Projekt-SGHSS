@@ -1,6 +1,6 @@
 from django.db import models
 from usuarios.models import Usuario
-from unidades.models import UnidadeHospitalar
+from unidade.models import UnidadeHospitalar
 
 
 class Paciente(models.Model):

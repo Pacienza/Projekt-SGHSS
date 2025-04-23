@@ -1,7 +1,7 @@
 from django.db import models
 from pacientes.models import Paciente
 from profissionais.models import ProfissionalSaude
-from unidades.models import UnidadeHospitalar
+from unidade.models import UnidadeHospitalar
 
 class Prescricao(models.Model):
     paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE, related_name='prescricoes')

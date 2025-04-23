@@ -6,6 +6,7 @@ from .serializers import ConsultaSerializer
 from usuarios.permissions import IsProfissional, IsAdmin
 
 class ConsultaViewSet(viewsets.ModelViewSet):
+    queryset = Consulta.objects.all()
     serializer_class = ConsultaSerializer
     permission_classes = [IsAuthenticated]
 

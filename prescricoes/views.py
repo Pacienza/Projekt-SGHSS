@@ -6,6 +6,7 @@ from .models import Prescricao
 from .serializers import PrescricaoSerializer
 
 class PrescricaoViewSet(viewsets.ModelViewSet):
+    queryset = Prescricao.objects.all()
     serializer_class = PrescricaoSerializer
     permission_classes = [IsAuthenticated]
 

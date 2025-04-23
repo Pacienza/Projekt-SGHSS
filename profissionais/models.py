@@ -1,6 +1,6 @@
 from django.db import models
 from usuarios.models import Usuario
-from unidades.models import UnidadeHospitalar
+from unidade.models import UnidadeHospitalar
 
 class ProfissionalSaude(models.Model):
     usuario = models.OneToOneField(Usuario, on_delete=models.CASCADE, related_name='profissional')
