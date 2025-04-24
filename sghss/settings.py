@@ -28,6 +28,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
+}
 
 # Application definition
 
@@ -44,7 +49,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt.token_blacklist',
     'drf_yasg', # Documenta a API
-    
+    'channels', # cria canais de WebSocket pra comunicação WebRTC
 
     # Classe base
     'usuarios.apps.UsuariosConfig',
@@ -54,6 +59,8 @@ INSTALLED_APPS = [
     'profissionais',
     # Requisitos
     'consultas',
+    'agenda',
+    'telemedicina',
     'prontuarios',
     'prescricoes',
     'internacoes',

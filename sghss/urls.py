@@ -14,14 +14,14 @@ urlpatterns = [
 
 
     # ENDPOINTS FUNÇÔES DO SISTEMA
+    path('api/', include('agenda.urls')),
     path('api/', include('consultas.urls')),
     path('api/', include('prontuarios.urls')),
     path('api/', include('prescricoes.urls')),
     path('api/', include('internacoes.urls')),
     path('api/relatorios/', include('relatorios.urls')),
     path('api/', include('unidade.urls')),
-
-
+    path('api/', include('telemedicina.urls')),
 
 
     
